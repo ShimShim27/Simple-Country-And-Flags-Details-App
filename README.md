@@ -20,5 +20,5 @@
 
 
 ## 📢 Reminder
-* Privates files in the code are not included in this project such as api keys , so you will need to create it on your own.
+* Privates files in the code are not included in this project such as api keys , so you will need to create it on your own. 
 * The app data sources are not real-time
