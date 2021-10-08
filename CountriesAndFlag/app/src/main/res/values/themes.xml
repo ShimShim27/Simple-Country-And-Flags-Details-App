@@ -13,6 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
 
+        <item name="android:fontFamily">@font/varela_round</item>
         <item name="android:windowBackground">@color/white</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:editTextColor">@color/white</item>
@@ -21,7 +22,7 @@
         <item name="rippleColor">@color/gray</item>
     </style>
 
->
+    >
 
     <style name="Theme.CountriesAndFlag.CountryDetailsLabel">
         <item name="android:textSize">16sp</item>
