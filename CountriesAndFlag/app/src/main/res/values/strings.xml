@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Countries And Flag</string>
+
+    <string name="country_loading_failed">Loading countries failed. Please check your internet connection.</string>
+    <string name="back_press_again">Press BACK again to exit</string>
+    <string name="search_view_hint">Country code or name</string>
+    <string name="details_copied">Country details copied to clipboard</string>
+</resources>
