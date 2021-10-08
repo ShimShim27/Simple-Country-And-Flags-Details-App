@@ -1,6 +1,6 @@
 # Simple-Country-And-Flags-Details-App <img src="https://media2.giphy.com/media/Kz0C7FiulKHC4EdgtN/giphy.gif?cid=6c09b952b69924504b80afd06e376b5e69cc96ae8d1710b9&rid=giphy.gif&ct=s" width="50" height="50"/>
 
- A simple country and flag details app for my practical exam in a company. The app fetch and displays countries data from available online sources. 
+ A simple country and flag details app for my practical exam in a company. The app fetch and displays countries data from available Rest Countries and other online sources. 
  The fetched data include country's name , capital , region , alpha2 code , alpha 3 code , calling codes , alt spellings ,latitude , longitude , languages , currencies , borders and population. There are 250 countries shown in the application in total.
  
 👉 Get the direct apk file [here](https://github.com/ShimShim27/Simple-Country-And-Flags-Details-App/blob/main/CountriesAndFlag/app/release/app-release.apk).
