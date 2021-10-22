@@ -66,6 +66,7 @@ class CountryDetailsActivity : AppCompatActivity(), OnMapReadyCallback {
         bordersView = findViewById(R.id.bordersView)
         populationView = findViewById(R.id.populationView)
 
+
         country = intent!!.extras!!.getParcelable(EXTRA_COUNTRY)!!
         supportActionBar?.title = country.name
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

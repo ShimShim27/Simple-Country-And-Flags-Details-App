@@ -2,6 +2,7 @@ package com.countries.flag.ui.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.inputmethod.EditorInfo
@@ -11,8 +12,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.countries.flag.R
 import com.countries.flag.dagger.DaggerViewModelComponent
 import com.countries.flag.dagger.ViewModelModule
+import com.countries.flag.datasource.retrofit.GithubRestApi
 import com.countries.flag.ui.countrydetails.CountryDetailsActivity
 import com.countries.flag.ui.util.MainUtil
+import com.google.gson.GsonBuilder
+import com.google.gson.reflect.TypeToken
 import java.util.*
 
 
@@ -33,8 +37,22 @@ class MainActivity : AppCompatActivity() {
         countriesRecyclerView.adapter = countriesRecyclerAdapter
         countriesRecyclerView.addItemDecoration(CountriesRecyclerDecoration())
         countriesRecyclerView.layoutManager?.onRestoreInstanceState(viewModel.recyclerLayoutParcelable)
-        viewModel.getCountriesIfNotYet()
+       viewModel.getCountriesIfNotYet()
 
+      /*  val typeToken =
+            object : TypeToken<List<GithubRestApi.CountryWithCurrencyBorderLanguage>>() {}.type
+        val gson = GsonBuilder().registerTypeAdapter(typeToken,
+            GithubRestApi . CountryWithCurrencyBorderLanguageListTypeAdapter ()
+        ).create()
+
+        val sc = Scanner(assets.open("a.json"))
+        var data = ""
+        while (sc.hasNext()) {
+            data += sc.next()
+        }
+
+
+        gson.fromJson<List<GithubRestApi.CountryWithCurrencyBorderLanguage>>(data, typeToken)*/
 
     }
 
@@ -92,9 +110,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         viewModel.countryLoadingFailed.observe(this, {
-            if (it) {
-                viewModel.countryLoadingFailed.value = false
-                MainUtil.makeToast(this, getString(R.string.country_loading_failed))
+            if (it.isNotEmpty()) {
+                viewModel.countryLoadingFailed.value = ""
+                MainUtil.makeToast(this, it)
             }
         })
 

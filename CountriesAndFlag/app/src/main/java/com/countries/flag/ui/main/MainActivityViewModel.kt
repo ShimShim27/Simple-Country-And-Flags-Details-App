@@ -1,6 +1,7 @@
 package com.countries.flag.ui.main
 
 import android.os.Parcelable
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.countries.flag.models.Country
@@ -16,7 +17,7 @@ class MainActivityViewModel(private val restRepo: RestRepo) : ViewModel() {
     private val countries = mutableListOf<Country>()
     val displayCountries = MutableLiveData(listOf<Country>())
     val showCountryDetails = MutableLiveData<Country?>()
-    val countryLoadingFailed = MutableLiveData(false)
+    val countryLoadingFailed = MutableLiveData("")
     val exitApplication = MutableLiveData(false)
     val showBackPressAgain = MutableLiveData(false)
 
@@ -54,7 +55,7 @@ class MainActivityViewModel(private val restRepo: RestRepo) : ViewModel() {
                     countries.addAll(restRepo.getCountries())
                     displayCountries.postValue(countries)
                 } catch (e: Exception) {
-                    countryLoadingFailed.postValue(true)
+                    countryLoadingFailed.postValue("$e")
                 }
 
             }
