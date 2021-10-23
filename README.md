@@ -3,7 +3,7 @@
  A simple country and flag details app. The app fetch and displays countries data from Rest Countries and other online sources. 
  The fetched data include country's name , capital , region , alpha2 code , alpha 3 code , calling codes , alt spellings ,latitude , longitude , languages , currencies , borders and population. There are 250 countries shown in the application in total.
  
-👉 Get the direct apk file [here](https://github.com/ShimShim27/Simple-Country-And-Flags-Details-App/blob/main/CountriesAndFlag/app/release/app-release.apk).
+👉 Get the direct apk file [here](https://github.com/ShimShim27/Simple-Country-And-Flags-Details-App/blob/main/app/release/app-release.apk).
 
 ## ⚙️ Setup
 * Clone the project
@@ -21,5 +21,5 @@
 
 ## 📢 Reminder
 * Privates files in the code are not included in this project such as api keys , so you will need to create it on your own.
-* Get the api key [here](https://manage.countrylayer.com/)
+* Get the api key [here](https://manage.countrylayer.com/).
 * The app data sources are not real-time
