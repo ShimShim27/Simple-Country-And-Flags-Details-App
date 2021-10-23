@@ -1,6 +1,5 @@
 package com.countries.flag.datasource.repo
 
-import android.util.Log
 import com.countries.flag.datasource.retrofit.CountryLayerRestApi
 import com.countries.flag.datasource.retrofit.GithubRestApi
 import com.countries.flag.datasource.room.database.MainDatabase
@@ -8,7 +7,6 @@ import com.countries.flag.models.Country
 import com.countries.flag.models.CountryJsonCache
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import java.lang.Exception
 
 class RestRepo(
     mainDatabase: MainDatabase,

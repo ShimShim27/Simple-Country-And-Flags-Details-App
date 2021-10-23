@@ -1,16 +1,14 @@
 package com.countries.flag.ui.main
 
 import android.os.Parcelable
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.countries.flag.models.Country
 import com.countries.flag.datasource.repo.RestRepo
+import com.countries.flag.models.Country
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import java.lang.Exception
 import java.util.*
 
 class MainActivityViewModel(private val restRepo: RestRepo) : ViewModel() {

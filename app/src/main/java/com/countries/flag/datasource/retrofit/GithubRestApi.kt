@@ -1,15 +1,12 @@
 package com.countries.flag.datasource.retrofit
 
-import android.util.Log
 import com.google.gson.TypeAdapter
-import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 import com.google.gson.stream.JsonReader
 import com.google.gson.stream.JsonToken
 import com.google.gson.stream.JsonWriter
 import retrofit2.Call
 import retrofit2.http.GET
-import java.lang.Exception
 
 interface GithubRestApi {
     @GET("mledoze/countries/master/countries.json")
