@@ -21,5 +21,5 @@
 
 ## 📢 Reminder
 * Privates files in the code are not included in this project such as api keys , so you will need to create it on your own.
-* Get country api key [here](https://manage.countrylayer.com/) .
+* Get the api key [here](https://manage.countrylayer.com/)
 * The app data sources are not real-time
